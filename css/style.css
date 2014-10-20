@@ -9,4 +9,5 @@ body {
 
 .feature-block {
 	background-image: url("../img/background/bird-sil.jpg");
+	background-repeat: no-repeat;
 }
