@@ -4,15 +4,20 @@ body {
 }
 
 img.fly-birds {
-	height: 130px;
-	width: 230px;
+	/*height: 130px;*/
+	width: 13%;
 	position: relative;
 	top: 0;
+}
+
+img#first-birds {
+	margin-left:2%;
+
 }
 
 .feature-block {
 	background-image: url("../img/background/bird-sil.jpg");
 	background-repeat: no-repeat;
 	min-height: 1400px;
- 	width: 1600px;
+ 	/*width: 1600px;*/
 }
