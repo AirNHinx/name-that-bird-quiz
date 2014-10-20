@@ -3,11 +3,14 @@ body {
 	background-color:#87CEEB;
 }
 
-.border-birds {
-
+img.fly-birds {
+	height: 280px;
+	width: 380px;
+	position: relative;
+	top: 0;
 }
 
 .feature-block {
-	background-image: url("../img/background/bird-sil.jpg");
+	background-image: url("../img/background/single-bird.jpg");
 	background-repeat: no-repeat;
 }
