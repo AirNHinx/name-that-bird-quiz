@@ -21,3 +21,12 @@ img#first-birds {
 	min-height: 1070px;
  	/*width: 1600px;*/
 }
+
+.main-text {
+	color: #800000;
+	font-family: "gisha","calibri",sans-serif;
+	font-size: 48px;
+	position: relative;
+	left: 30%;
+	padding-top: 5%;
+}
