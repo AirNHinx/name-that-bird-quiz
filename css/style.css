@@ -11,6 +11,8 @@ img.fly-birds {
 }
 
 .feature-block {
-	background-image: url("../img/background/bird_art.jpg");
+	background-image: url("../img/background/branch-sil.jpg");
 	background-repeat: no-repeat;
+	min-height: 1400px;
+ 	width: 1600px;
 }
