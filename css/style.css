@@ -15,20 +15,15 @@ img#first-birds {
 
 }
 
-.feature-block {
-	background-image: url("../img/background/bird-sil.jpg");
-	background-repeat: no-repeat;
-	min-height: 1070px;
- 	/*width: 1600px;*/
+.feature-container {
+
 }
 
-.main-text {
-	color: #800000;
+.text-container {
+	color: #DC143C;
 	font-family: "gisha","calibri",sans-serif;
 	font-size: 48px;
-	position: absolute;
-	left: 30%;
-	padding-top: 5%;
+	position: relative;
 }
 
 form.start {
