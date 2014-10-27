@@ -18,7 +18,7 @@ img#first-birds {
 .feature-container {
 	position: relative;
 	height: 1000px;
-	width: 1263px;
+	width: 100%;
 
 }
 
@@ -38,19 +38,29 @@ img#first-birds {
 	font-family: "gisha","calibri",sans-serif;
 	font-size: 48px;
 	position: relative;
+	height: 360px;
+	width: 800px;
+	/* text-align: center; */
+	left: 20px;
 }
 
 form.start {
-	position: absolute;
-	/* display: inline-block; */
-	top: 90%;
-	left: 45%;
+	bottom: 75px;
+	left: 210px;
 }
 
 p.top-msg, p.mid-msg, p.btm-msg, form.start {
 	position: absolute;
 }
 
-p.mid-msg {
+p.top-msg {
+	top: 12px;
+}
 
+p.mid-msg {
+	top: 80px;
+}
+
+p.mid-msg {
+	top: 150px;
 }
