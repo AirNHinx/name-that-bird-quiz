@@ -27,7 +27,7 @@ img#first-birds {
 }
 
 .main-bg {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 80%;
 	/* text-align: center; */
@@ -38,8 +38,8 @@ img#first-birds {
 	font-family: "gisha","calibri",sans-serif;
 	font-size: 48px;
 	position: absolute;
-	height: 300px;
-	width: 800px;
+	height: 32%;
+	width: 43%;
 	/* text-align: center; */
 	left: 20px;
 	top: 20px;
@@ -57,18 +57,18 @@ p.top-msg, p.mid-msg, p.btm-msg, form.start {
 }
 
 p.top-msg {
-	top: 12px;
-	left: 50px;
+	top: 5%;
+	left: 6%;
 }
 
 p.mid-msg {
-	top: 80px;
-	left: 50px;
+	top: 36%;
+	left: 6%;
 }
 
 p.btm-msg {
-	top: 150px;
-	right: 60px;
+	bottom: 4%;
+	right: 6%;
 }
 
 button.initiate {
