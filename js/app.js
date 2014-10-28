@@ -40,8 +40,8 @@ $(document).ready(function(){
 	}]
 
 	/*--- initiate first question---*/
-	$('#initiate').click(function() {
-		$('#main-img').html('<img class="main-bg" src="img/background/clouds.jpg">')
+	$('.initiate').click(function() {
+		$('.main-img').html('<img class="main-bg" src="img/background/clouds.jpg">')
 	})
 
 
