@@ -81,8 +81,10 @@ button.initiate {
 
 .bird {
 	position: absolute;
-	right: 100px;
-	top: 20px; 	
+	right: 20px;
+	top: 20px;
+	min-width: 1040px;
+	min-height: 758px;
 }
 
 img.bird-zero {
