@@ -42,13 +42,14 @@ img#first-birds {
 	width: 800px;
 	/* text-align: center; */
 	left: 20px;
+	top: 20px;
 	background-color: #DCDCDC;
 	opacity: 0.8;
 }
 
 form.start {
-	bottom: 55px;
-	left: 210px;
+	bottom: 28px;
+	right: 28px;
 }
 
 p.top-msg, p.mid-msg, p.btm-msg, form.start {
@@ -67,5 +68,13 @@ p.mid-msg {
 
 p.btm-msg {
 	top: 150px;
-	left: 50px;
+	right: 60px;
+}
+
+button.initiate {
+	background-color: #DC143C;
+	border: 5px solid black;
+	height: 60px;
+	font-size: 20px;
+	border-radius: 16%;
 }
