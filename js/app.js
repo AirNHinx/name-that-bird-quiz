@@ -57,7 +57,7 @@ $(document).ready(function(){
 		response: "Blah blah blah Eagle Owl blah blah."				
 		}, {
 		q: "Name that bird!",
-		options: ["Raibow Bee Eater", "bird option", "another bird option", "Greater Bird of Paradise"],
+		options: ["Raibow Bee Eater", "Gang-gang Cockatoo", "Banded Pitta", "Greater Bird of Paradise"],
 		qIndex: 9,
 		correct: 4,
 		response: "Blah blah blah Greater Bird of Paradise blah blah."			
