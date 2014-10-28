@@ -38,14 +38,16 @@ img#first-birds {
 	font-family: "gisha","calibri",sans-serif;
 	font-size: 48px;
 	position: absolute;
-	height: 360px;
+	height: 300px;
 	width: 800px;
 	/* text-align: center; */
 	left: 20px;
+	background-color: #DCDCDC;
+	opacity: 0.8;
 }
 
 form.start {
-	bottom: 75px;
+	bottom: 55px;
 	left: 210px;
 }
 
@@ -55,12 +57,15 @@ p.top-msg, p.mid-msg, p.btm-msg, form.start {
 
 p.top-msg {
 	top: 12px;
+	left: 50px;
 }
 
 p.mid-msg {
 	top: 80px;
+	left: 50px;
 }
 
 p.btm-msg {
 	top: 150px;
+	left: 50px;
 }
