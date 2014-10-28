@@ -81,15 +81,15 @@ button.initiate {
 
 .bird {
 	position: absolute;
-	left: 49%;
+	left: 45%;
 	top: 20px;
 	min-width: 870px;
 	min-height: 758px;
 }
 
 img.bird-zero {
-	height: 600px;
-	width: 870px;
+	height: 740px;
+	width: 1020px;
 }
 
 .option-container {
