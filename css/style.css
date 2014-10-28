@@ -91,3 +91,17 @@ img.bird-zero {
 	height: 600px;
 	width: 870px;
 }
+
+.option-container {
+	position: absolute;
+	color: #DC143C;
+	font-family: "gisha","calibri",sans-serif;
+	font-size: 48px;
+	position: absolute;
+	height: 410px;
+	width: 800px;
+	left: 20px;
+	top: 351px;
+	background-color: #DCDCDC;
+	opacity: 0.8;
+}
