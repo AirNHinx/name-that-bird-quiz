@@ -48,8 +48,9 @@ img#first-birds {
 }
 
 form.start {
-	bottom: 28px;
-	right: 28px;
+	position: absolute;
+	bottom: 58%;
+	left: 15%;
 }
 
 p.top-msg, p.mid-msg, p.btm-msg, form.start {
@@ -68,7 +69,7 @@ p.mid-msg {
 
 p.btm-msg {
 	bottom: 4%;
-	right: 6%;
+	left: 6%;
 }
 
 button.initiate {
@@ -98,8 +99,8 @@ img.bird-zero {
 	font-family: "gisha","calibri",sans-serif;
 	font-size: 48px;
 	position: absolute;
-	height: 410px;
-	width: 800px;
+	height: 35%;
+	width: 43%;
 	left: 20px;
 	top: 351px;
 	background-color: #DCDCDC;
