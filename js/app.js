@@ -44,11 +44,4 @@ $(document).ready(function(){
 		$('.main-img').html('<img class="main-bg" src="img/background/clouds.jpg">')
 	})
 
-
-
-
-
-
-
-
-}
+})
