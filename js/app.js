@@ -67,6 +67,7 @@ $(document).ready(function(){
 	$('.initiate').click(function() {
 		$('.main-img').html('<img class="main-bg" src="img/background/clouds.jpg">');
 		$('.bird').html('<img class="bird-zero" src="img/bird/black-capped-chickadee.jpg">');
+		$('#bird-options').addClass("option-container");
 	})
 
 })
