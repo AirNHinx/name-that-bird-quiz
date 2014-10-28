@@ -66,7 +66,7 @@ $(document).ready(function(){
 	/*--- initiate first question---*/
 	$('.initiate').click(function() {
 		$('.main-img').html('<img class="main-bg" src="img/background/clouds.jpg">');
-		$('top-msg').html('<p>'+birds.q+'</p>');
+		$('.top-msg').html('<p>'+birds.q+'</p>');
 		$('.bird').html('<img class="bird-zero" src="img/bird/black-capped-chickadee.jpg">');
 		$('#bird-options').addClass("option-container").html('<p>' + birds.option + '</p>');
 	})
