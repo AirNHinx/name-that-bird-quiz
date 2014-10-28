@@ -41,7 +41,8 @@ $(document).ready(function(){
 
 	/*--- initiate first question---*/
 	$('.initiate').click(function() {
-		$('.main-img').html('<img class="main-bg" src="img/background/clouds.jpg">')
+		$('.main-img').html('<img class="main-bg" src="img/background/clouds.jpg">');
+		$('.bird').html('<img class="main-bg" src="img/bird/black-capped-chickadee.jpg">');
 	})
 
 })
