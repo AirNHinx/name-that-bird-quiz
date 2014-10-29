@@ -13,7 +13,7 @@ $(document).ready(function(){
 	$("#bird-nine").hide();
 
 
-	var birds = [{
+	/*---var birds = [{
 		q: "Name that bird!",
 		option: ["Cedar Waxwing", "Song Sparrow", "Black Capped Chickadee", "Dark Eyed Junco"],
 		qIndex: 0,
@@ -73,7 +73,7 @@ $(document).ready(function(){
 		qIndex: 9,
 		correct: 4,
 		response: "Blah blah blah Greater Bird of Paradise blah blah."			
-		}]
+		}]---*/
 
 var answeredCorrect = 0;
 var currentBird = 0;
@@ -81,7 +81,9 @@ var currentBird = 0;
 	/*--- initiate first question---*/
 	$('.initiate').click(function() {
 		$('.main-img').html('<img class="main-bg" src="img/background/clouds.jpg">');
-		$('.top-msg').html('<p>'+birds.q+'</p>');
+		$('.top-msg').hide();
+		$('.mid-msg').html('<p>Name that bird!</p>');
+		$('.btm-msg').hide();
 		$('.bird').html('<img class="bird-zero" src="img/bird/black-capped-chickadee.jpg">');
 		$('#bird-options').addClass("option-container");
 		$("#bird-zero").show();
