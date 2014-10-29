@@ -1,6 +1,18 @@
 
 $(document).ready(function(){
 
+	$("#bird-zero").hide();
+	$("#bird-one").hide();
+	$("#bird-two").hide();
+	$("#bird-three").hide();
+	$("#bird-four").hide();
+	$("#bird-five").hide();
+	$("#bird-six").hide();
+	$("#bird-seven").hide();
+	$("#bird-eight").hide();
+	$("#bird-nine").hide();
+
+
 	var birds = [{
 		q: "Name that bird!",
 		option: ["Cedar Waxwing", "Song Sparrow", "Black Capped Chickadee", "Dark Eyed Junco"],
@@ -71,7 +83,8 @@ var currentBird = 0;
 		$('.main-img').html('<img class="main-bg" src="img/background/clouds.jpg">');
 		$('.top-msg').html('<p>'+birds.q+'</p>');
 		$('.bird').html('<img class="bird-zero" src="img/bird/black-capped-chickadee.jpg">');
-		$('#bird-options').addClass("option-container").html('<p>' + birds.option + '</p>');
+		$('#bird-options').addClass("option-container");
+		$("#bird-zero").hide();
 	})
 
 })
