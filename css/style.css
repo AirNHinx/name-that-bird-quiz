@@ -81,8 +81,8 @@ li.btm-msg {
 
 button.initiate {
 	background-color: #DC143C;
-	border: 5px solid black;
-	height: 60px;
+	border: 3px solid black;
+	height: 50px;
 	font-size: 20px;
 	border-radius: 16%;
 }
@@ -92,13 +92,13 @@ button.initiate {
 	left: 45%;
 	top: 20px;
 	min-width: 870px;
-	min-height: 758px;
 
 }
 
 img.bird-zero {
-	height: 740px;
-	width: 1020px;
+	height: 820px;
+	width: 99%;
+	border-radius: 7%;
 }
 
 .option-container {
