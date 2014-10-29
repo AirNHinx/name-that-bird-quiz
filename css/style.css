@@ -45,6 +45,8 @@ img#first-birds {
 	top: 20px;
 	background-color: #DCDCDC;
 	opacity: 0.8;
+	border-radius: 7%;
+
 }
 
 ul.callout {
@@ -61,20 +63,22 @@ form.start {
 	position: absolute;
 }
 
-p.top-msg {
-	top: 5%;
-	left: 6%;
+.top-msg, .mid-msg, .btm-msg {
+	left: 5%;
 }
 
-p.mid-msg {
-	top: 36%;
-	left: 6%;
+li.top-msg {
+	top: 1%;
 }
 
-p.btm-msg {
-	bottom: 4%;
-	left: 6%;
+li.mid-msg {
+	top: 38%;
 }
+
+li.btm-msg {
+	bottom: 3%;
+}
+
 
 button.initiate {
 	background-color: #DC143C;
@@ -90,6 +94,8 @@ button.initiate {
 	top: 20px;
 	min-width: 870px;
 	min-height: 758px;
+	border-radius: 7%;
+
 }
 
 img.bird-zero {
@@ -109,4 +115,6 @@ img.bird-zero {
 	top: 351px;
 	background-color: #DCDCDC;
 	opacity: 0.8;
+	border-radius: 7%;
+
 }
