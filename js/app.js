@@ -63,6 +63,9 @@ $(document).ready(function(){
 		response: "Blah blah blah Greater Bird of Paradise blah blah."			
 		}]
 
+var answeredCorrect = 0;
+var currentBird = 0;
+
 	/*--- initiate first question---*/
 	$('.initiate').click(function() {
 		$('.main-img').html('<img class="main-bg" src="img/background/clouds.jpg">');
