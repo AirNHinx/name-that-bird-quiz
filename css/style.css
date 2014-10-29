@@ -47,13 +47,17 @@ img#first-birds {
 	opacity: 0.8;
 }
 
+ul.callout {
+	height: 100%;
+}
+
 form.start {
 	position: absolute;
 	bottom: 58%;
 	left: 15%;
 }
 
-p.top-msg, p.mid-msg, p.btm-msg, form.start {
+.top-msg, .mid-msg, .btm-msg, form.start {
 	position: absolute;
 }
 
