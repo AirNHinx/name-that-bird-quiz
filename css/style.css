@@ -96,14 +96,14 @@ button.initiate {
 	position: absolute;
 	left: 45%;
 	top: 20px;
-	min-width: 870px;
+	width: 55%;
 
 }
 
 img.bird-zero {
 	height: 820px;
 	width: 99%;
-	border-radius: 7%;
+	border-radius: 6%;
 }
 
 .option-container {
