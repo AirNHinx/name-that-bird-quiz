@@ -3,8 +3,13 @@ body {
 	background-color:#87CEEB;
 }
 
+header {
+	height: 130px;
+}
+
+
 img.fly-birds {
-	/*height: 130px;*/
+	height: 130px;
 	width: 13%;
 	position: relative;
 	top: 0;
