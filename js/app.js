@@ -90,6 +90,9 @@ var currentBird = 0;
 		$("#bird-options").addClass("option-container");
 		$("#bird-zero").show();
 		$("#bird-zero>ul>li.option-two").addClass("correct-bird");
+		$("#bird-zero>ul>li.option-zero").addClass("wrong-bird");
+		$("#bird-zero>ul>li.option-one").addClass("wrong-bird");
+		$("#bird-zero>ul>li.option-three").addClass("wrong-bird");
 		$(".initiate").hide();
 	})
 
@@ -104,7 +107,7 @@ var currentBird = 0;
 		} else if (t.hasClass("correct-bird")){
 			console.log("correct-bird");
 			$(".answer-correct").show();
-			$(".initiate").html("CONTINUE").addClass("proceed")
+			$(".initiate").html("CONTINUE").addClass("proceed").show();
 		} else {
 			$(".answer-correct").hide();
 		}
