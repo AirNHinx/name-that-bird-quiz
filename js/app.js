@@ -100,7 +100,7 @@ var currentBird = 0;
 		console.log(t.hasClass("correct-bird"));
 		if (t.hasClass("wrong-bird")) {
 			$(".answer-wrong").show();
-		} else if (t.hasClass("correct-bird"){
+		} else if (t.hasClass("correct-bird")){
 			console.log("correct-bird");
 			$(".answer-correct").show();
 			$('.initiate').html("CONTINUE").addClass("proceed")
