@@ -104,7 +104,7 @@ var currentBird = 0;
 			console.log("correct-bird");
 			$(".answer-correct").show();
 			$('.initiate').html("CONTINUE").addClass("proceed")
-		}; else {
+		} else {
 			$(".answer-correct").hide();
 			$(".answer-wrong").hide();
 		}
