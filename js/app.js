@@ -98,13 +98,16 @@ var currentBird = 0;
 		var t = $(event.target);
 		console.log(t);
 		console.log(t.hasClass("correct-bird"));
-		if (t.hasClass("correct-bird")) {
+		if (t.hasClass("wrong-bird")) {
+			$(".answer-wrong").show();
+		} else if (t.hasClass("correct-bird"){
 			console.log("correct-bird");
 			$(".answer-correct").show();
 			$('.initiate').html("CONTINUE").addClass("proceed")
-		} else {
-			$(".answer-wrong").show();
-		};
+		}; else {
+			$(".answer-correct").hide();
+			$(".answer-wrong").hide();
+		}
 
 	});
 	
