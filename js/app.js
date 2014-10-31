@@ -87,7 +87,7 @@ var currentBird = 0;
 		$('.bird').html('<img class="bird-zero" src="img/bird/black-capped-chickadee.jpg">');
 		$('#bird-options').addClass("option-container");
 		$("#bird-zero").show();
-		$(".option-list>ul>li>li>li").addClass("correct-bird");
+		$("#bord-zero>.option-two").addClass("correct-bird");
 	})
 
 	/*---indicate selected answer---*/
