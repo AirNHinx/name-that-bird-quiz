@@ -109,6 +109,7 @@ var currentBird = 0;
 			console.log("correct-bird");
 			$(".answer-correct").show();
 			$(".answer-wrong").hide();
+			$(".wrong-bird").hide();
 			$(".initiate").html("CONTINUE").addClass("proceed").show();
 		};
 

@@ -60,7 +60,7 @@ img#first-birds {
 
 .start {
 	top: 45%;
-	left: 33%;
+	left: 16%;
 }
 
 .top-msg, .mid-msg, .btm-msg, .start {
@@ -130,7 +130,7 @@ img.bird-zero {
 
 .answer-correct, .answer-wrong {
 	position: absolute;
-	top: 40%;
+	top: 28%;
 	left: 5%;
 	font-size: 72px;
 }
