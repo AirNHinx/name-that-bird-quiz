@@ -82,11 +82,11 @@ var currentBird = 0;
 
 	/*--- initiate first question---*/
 	$(".initiate").click(function() {
-		$(".main-img").html('<img class="main-bg" src="img/background/clouds.jpg">');
+		$(".main-img").html("<img class='main-bg' src='img/background/clouds.jpg'>");
 		$(".top-msg").hide();
 		$(".mid-msg").html("<p>Name that bird!</p>");
 		$(".btm-msg").hide();
-		$(".bird").html('<img class="bird-zero" src="img/bird/black-capped-chickadee.jpg">');
+		$(".bird").html("<img class='bird-zero' src='img/bird/black-capped-chickadee.jpg'>");
 		$("#bird-options").addClass("option-container");
 		$("#bird-zero").show();
 		$("#bird-zero>ul>li.option-two").addClass("correct-bird");
