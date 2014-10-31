@@ -1,16 +1,7 @@
 
 $(document).ready(function(){
 
-	$("#bird-zero").hide();
-	$("#bird-one").hide();
-	$("#bird-two").hide();
-	$("#bird-three").hide();
-	$("#bird-four").hide();
-	$("#bird-five").hide();
-	$("#bird-six").hide();
-	$("#bird-seven").hide();
-	$("#bird-eight").hide();
-	$("#bird-nine").hide();
+	$(".options-list").hide();
 	$(".answer-correct").hide();
 	$(".answer-wrong").hide();
 
@@ -79,28 +70,44 @@ $(document).ready(function(){
 
 var answeredCorrect = 0;
 var currentBird = 0;
+var correctBird = [3, 4, 1, 1, 3, 2, 2, 4, 3, 4];
+var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'violet-sabrewing-hummingbird.jpg', 'puffin.jpg', 'purple-finch.jpg', 'wooduck.jpg', 'stellers-jay.jpg', 'eagle-owl.jpg', 'greater-bird-paradise.jpg']
 
 	/*--- initiate first question---*/
-	$(".initiate").click(function() {
+	$(".initiate").click(function(9) {
 		$(".main-img").html("<img class='main-bg' src='img/background/clouds.jpg'>");
 		$(".top-msg").hide();
 		$(".mid-msg").html("<p>Name that bird!</p>");
 		$(".btm-msg").hide();
-		$(".bird").html("<img class='bird-zero' src='img/bird/black-capped-chickadee.jpg'>");
+		//$(".bird").html("<img class='birdImg' + currentBird + "' src='img/bird/black-capped-chickadee.jpg'>");
+		$(".birdImg").attr("src", "img/bird/" + birdImg[currentBird]);
 		$("#bird-options").addClass("option-container");
-		$("#bird-zero").show();
-		$("#bird-zero>ul>li.option-two").addClass("correct-bird");
-		$("#bird-zero>ul>li.option-zero").addClass("wrong-bird");
-		$("#bird-zero>ul>li.option-one").addClass("wrong-bird");
-		$("#bird-zero>ul>li.option-three").addClass("wrong-bird");
+		$("#bird-" + currentBird).show();
+		//$("#bird-zero").show();
+		$("#bird-" + currentBird + ">ul>li.options").addClass("wrong-bird");
+		$("#bird-" + currentBird + ">ul>li.option-" + correctBird[currentBird]).removeClass("wrong-bird").addClass("correct-bird");
+		//$("#bird-zero>ul>li.option-two").addClass("correct-bird");
+		//$("#bird-zero>ul>li.option-zero").addClass("wrong-bird");
+		//$("#bird-zero>ul>li.option-one").addClass("wrong-bird");
+		//$("#bird-zero>ul>li.option-three").addClass("wrong-bird");
 		$(".initiate").hide();
+		currentBird += 1;
+		10;
 	})
+
+	/*--highlight focused option--*/
+	$(".option-zero").mouseenter(function() {
+
+
+	});
 
 	/*---indicate selected answer---*/
 	$(".option-list>ul>li").on("click", function(event){
 		var t = $(event.target);
 		console.log(t);
 		console.log(t.hasClass("correct-bird"));
+		console.log(currentBird)
+
 		if (t.hasClass("wrong-bird")) {
 			console.log("WRONG");
 			$(".answer-wrong").show();
@@ -111,14 +118,19 @@ var currentBird = 0;
 			$(".answer-wrong").hide();
 			$(".wrong-bird").hide();
 			$(".initiate").html("CONTINUE").addClass("proceed").show();
+			answeredCorrect += 1;
 		};
+		if (currentBird >9) {
+			calcScoreAndReport()
+		}
 
 	});
 	
 
-	function selectBird() {
-		
-		/*$("option-list").on("click")*/
+	function calcScoreAndReport() {
+		console.log(answeredCorrect);
+		console.log(answeredCorrect/correctBird.length);
+
 
 	}
 
