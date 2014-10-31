@@ -11,8 +11,8 @@ $(document).ready(function(){
 	$("#bird-seven").hide();
 	$("#bird-eight").hide();
 	$("#bird-nine").hide();
-	$("answer-correct").hide();
-	$("answer-wrong").hide();
+	$(".answer-correct").hide();
+	$(".answer-wrong").hide();
 
 
 	/*---var birds = [{
