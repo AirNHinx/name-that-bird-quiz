@@ -97,12 +97,13 @@ var currentBird = 0;
 		console.log(t.hasClass("correct-bird"));
 		if (t.hasClass("correct-bird")) {
 			console.log("correct-bird");
-		}
-
-	});
-	if (this.hasClass("option-list") {
+		};
+		if (this.hasClass("option-list") {
 			console.log("OPTIONS")
 		};	
+
+	});
+	
 
 	function selectBird() {
 		
