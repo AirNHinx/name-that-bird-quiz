@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 
 var answeredCorrect = 0;
-var currentBird = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+var currentBird = 0;
 var correctBird = [2, 4, 1, 1, 3, 2, 2, 4, 3, 4];
 var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'violet-sabrewing-hummingbird.jpg', 'puffin.jpg', 'purple-finch.jpg', 'wooduck.jpg', 'stellers-jay.jpg', 'eagle-owl.jpg', 'greater-bird-paradise.jpg']
 
