@@ -54,16 +54,16 @@ img#first-birds {
 
 }
 
-ul.callout {
+.callout {
 	height: 100%;
 }
 
-form.start {
+.start {
 	top: 45%;
 	left: 33%;
 }
 
-.top-msg, .mid-msg, .btm-msg, form.start {
+.top-msg, .mid-msg, .btm-msg, .start {
 	position: absolute;
 }
 
@@ -71,20 +71,20 @@ form.start {
 	left: 5%;
 }
 
-li.top-msg {
+.top-msg {
 	top: 1%;
 }
 
-li.mid-msg {
+.mid-msg {
 	top: 16%;
 }
 
-li.btm-msg {
+.btm-msg {
 	top: 32%;
 }
 
 
-button.initiate {
+.initiate {
 	background-color: #DC143C;
 	border: 3px solid black;
 	height: 50px;
@@ -123,4 +123,8 @@ img.bird-zero {
 	left: 11%;
 	height: 100%;
 	top:10%;
+}
+
+.option-list>ul>li {
+	padding-bottom: 20px;
 }

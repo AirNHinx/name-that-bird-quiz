@@ -87,6 +87,18 @@ var currentBird = 0;
 		$('.bird').html('<img class="bird-zero" src="img/bird/black-capped-chickadee.jpg">');
 		$('#bird-options').addClass("option-container");
 		$("#bird-zero").show();
+		$(".option-list>ul>li>li>li").addClass("correct-bird");
 	})
 
-})
+	/*---indicate selected answer---*/
+	$('.option-list>ul>li').on("click", function(event){
+		var t = $(event.target);
+		console.log(t);
+		console.log(t.hasClass("correct-bird"));
+		if (t.hasClass("correct-bird")) {
+			console.log("correct-bird");
+		}
+
+	});
+
+});
