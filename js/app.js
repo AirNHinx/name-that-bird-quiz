@@ -107,7 +107,6 @@ var currentBird = 0;
 			$(".initiate").html("CONTINUE").addClass("proceed")
 		} else {
 			$(".answer-correct").hide();
-			$(".answer-wrong").hide();
 		}
 
 	});
