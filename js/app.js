@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
 	$(".options-list").hide();
-	$(".options").hide();
+	$(".option").hide();
 	$(".answer-correct").hide();
 	$(".answer-wrong").hide();
 
