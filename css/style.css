@@ -118,11 +118,10 @@ img.bird-zero {
 }
 
 .option-list {
-	width: 76%;
+	width: 40%;
 	position: absolute;
-	left: 11%;
+	left: 3%;
 	height: 100%;
-	top:10%;
 }
 
 .option-list>ul>li {
