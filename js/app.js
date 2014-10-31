@@ -100,5 +100,14 @@ var currentBird = 0;
 		}
 
 	});
+	if (this.hasClass("option-list") {
+			console.log("OPTIONS")
+		};	
+
+	function selectBird() {
+		
+		/*$("option-list").on("click")*/
+
+	}
 
 });
