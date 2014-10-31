@@ -90,7 +90,7 @@ var currentBird = 0;
 		$("#bird-options").addClass("option-container");
 		$("#bird-zero").show();
 		$("#bird-zero>ul>li.option-two").addClass("correct-bird");
-		$("initiate").hide();
+		$(".initiate").hide();
 	})
 
 	/*---indicate selected answer---*/
