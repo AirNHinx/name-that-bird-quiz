@@ -24,7 +24,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		$(".bird").attr("src", "img/bird/" + birdImg[currentBird]);
 		$("#bird-options").addClass("option-container");
 		console.log(currentBird.length);
-		$("#bird-" + currentBird.length).show();
+		$("#bird-" + 0).show();
 		//$("#bird-zero").show();
 		$("#bird-" + currentBird + ">ul>li.option").addClass("wrong-bird");
 		$("#bird-" + currentBird + ">ul>li.option-" + correctBird[currentBird]).removeClass("wrong-bird").addClass("correct-bird");
