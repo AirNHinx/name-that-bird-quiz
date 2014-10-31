@@ -11,6 +11,8 @@ $(document).ready(function(){
 	$("#bird-seven").hide();
 	$("#bird-eight").hide();
 	$("#bird-nine").hide();
+	$("answer-correct").hide();
+	$("answer-wrong").hide();
 
 
 	/*---var birds = [{
@@ -97,10 +99,10 @@ var currentBird = 0;
 		console.log(t.hasClass("correct-bird"));
 		if (t.hasClass("correct-bird")) {
 			console.log("correct-bird");
+			$(".answer-correct").show();
+		} else {
+			$(".answer-wrong").show();
 		};
-		if (this.hasClass("option-list") {
-			console.log("OPTIONS")
-		};	
 
 	});
 	
