@@ -92,7 +92,7 @@ img#first-birds {
 	border-radius: 16%;
 }
 
-.bird {
+.bird-img {
 	position: absolute;
 	left: 45%;
 	top: 150px;
@@ -100,7 +100,7 @@ img#first-birds {
 
 }
 
-img.bird-zero {
+.bird {
 	height: 820px;
 	width: 99%;
 	border-radius: 6%;
