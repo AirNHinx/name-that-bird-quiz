@@ -104,13 +104,13 @@ var currentBird = 0;
 		if (t.hasClass("wrong-bird")) {
 			console.log("WRONG");
 			$(".answer-wrong").show();
+			$(".answer-correct").hide();
 		} else if (t.hasClass("correct-bird")){
 			console.log("correct-bird");
 			$(".answer-correct").show();
+			$(".answer-wrong").hide();
 			$(".initiate").html("CONTINUE").addClass("proceed").show();
-		} else {
-			$(".answer-correct").hide();
-		}
+		};
 
 	});
 	
