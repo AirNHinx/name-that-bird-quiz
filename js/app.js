@@ -20,7 +20,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		$(".mid-msg").html("<p>Name that bird!</p>");
 		$(".btm-msg").hide();
 		//$(".bird").html("<img class='birdImg' + currentBird + "' src='img/bird/black-capped-chickadee.jpg'>");
-		$(".birdImg").attr("src", "img/bird/" + birdImg[currentBird]);
+		$(".bird").attr("src", "img/bird/" + birdImg[currentBird]);
 		$("#bird-options").addClass("option-container");
 		$("#bird-" + currentBird).show();
 		//$("#bird-zero").show();
