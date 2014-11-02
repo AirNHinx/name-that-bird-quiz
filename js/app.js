@@ -20,13 +20,13 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		$(".mid-msg").html("<p>Name that bird!</p>");
 		$(".btm-msg").hide();
 		//$(".bird").html("<img class='birdImg' + currentBird + "' src='img/bird/black-capped-chickadee.jpg'>");
-		$(".bird-img").html('<img class = "bird"' + '>');
+		$(".bird-img").html("<img class = 'bird' " + ">");
 		$(".bird").attr("src", "img/bird/" + birdImg[currentBird]);
 		$("#bird-options").addClass("option-container");
 		console.log(correctBird[currentBird]);
-		$('#bird' + currentBird).show();
+		$("#bird" + currentBird).show();
 		//$('#bird' + currentBird + '>ul>li.option').addClass('wrong-bird');
-		$('#bird0>ul>li.option2').addClass('correct-bird');
+		$("#bird0>ul>option2").addClass("correct-bird");
 		//$('#bird' + currentBird + '>ul>li.option' + correctBird[currentBird]).addClass('correct-bird')/*.removeClass('wrong-bird')*/;
 		$(".initiate").hide();
 		currentBird += 1;
