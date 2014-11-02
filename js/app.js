@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-	$(".option-list").hide();
+	//$(".option-list").hide();
 	$(".option").hide();
 	$(".answer-correct").hide();
 	$(".answer-wrong").hide();
