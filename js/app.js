@@ -36,9 +36,11 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 	})
 
 	/*--highlight focused option--*/
-	$(".option-zero").mouseenter(function() {
-
-
+	$(".option").mouseenter(function() {
+		$(this).addClass("mouse-over");
+	})
+	.mouseleave(function(){
+		$(this).removeClass("mouse-over");
 	});
 
 	/*---indicate selected answer---*/

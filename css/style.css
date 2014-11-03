@@ -4,12 +4,12 @@ body {
 }
 
 header {
-	height: 130px;
+	height: 100px;
 }
 
 
 img.fly-birds {
-	height: 130px;
+	height: 110px;
 	width: 13%;
 	position: relative;
 	top: 0;
@@ -95,7 +95,7 @@ img#first-birds {
 .bird-img {
 	position: absolute;
 	left: 45%;
-	top: 150px;
+	top: 120px;
 	width: 55%;
 
 }
@@ -120,12 +120,14 @@ img#first-birds {
 .option-list {
 	width: 40%;
 	position: absolute;
-	left: 3%;
+	left: 7%;
 	height: 100%;
 }
 
-.option-list>ul>li {
+.option{
 	padding-bottom: 20px;
+	list-style: initial;
+
 }
 
 .answer-correct, .answer-wrong {
@@ -133,4 +135,9 @@ img#first-birds {
 	top: 28%;
 	left: 5%;
 	font-size: 72px;
+}
+
+.mouse-over {
+	text-decoration: underline;
+	font-weight: bolder;
 }
