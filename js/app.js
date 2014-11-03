@@ -19,7 +19,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		$(".correct-bird").hide();
 		$(".answer-correct").hide();
 		$(".top-msg").hide();
-		$(".mid-msg").html("<p>Name that bird!</p>");
+		$(".mid-msg").html("<p>Name that bird!</p>").show();
 		$(".btm-msg").hide();
 		//$(".bird").html("<img class='birdImg' + currentBird + "' src='img/bird/black-capped-chickadee.jpg'>");
 		$(".bird-img").html("<img class = 'bird' " + ">");
@@ -58,6 +58,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			$(".answer-correct").show();
 			$(".answer-wrong").hide();
 			$(".wrong-bird").hide();
+			$(".mid-msg").hide();
 			$(".initiate").html("CONTINUE").show();
 
 			answeredCorrect += 1;
@@ -71,9 +72,12 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 	
 
 	function calcScoreAndReport() {
-		$("button.calc-score").on("click", function() {
-		console.log(answeredCorrect);
-		console.log(answeredCorrect/correctBird.length);
+			$("button.calc-score").on("click", function() {
+			$(".correct-bird").hide();
+			$(".answer-correct").hide();
+			$("button.calc-score").hide();	
+			console.log(answeredCorrect);
+			console.log(answeredCorrect/correctBird.length);
 
 		})
 	}
