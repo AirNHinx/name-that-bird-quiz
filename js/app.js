@@ -75,7 +75,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		console.log(answeredCorrect);
 		console.log(Math(answeredCorrect/correctBird.length));
 
-		};
+		}
 	});
 
 
