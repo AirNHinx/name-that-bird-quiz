@@ -18,6 +18,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		$(".main-img").html("<img class='main-bg' src='img/background/clouds.jpg'>");
 		$(".correct-bird").hide();
 		$(".answer-correct").hide();
+		$(".answer-wrong").hide();
 		$(".top-msg").hide();
 		$(".mid-msg").html("<p>Name that bird!</p>").show();
 		$(".btm-msg").hide();
@@ -95,7 +96,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 				$(".top-msg").html("Not too bad!").show();
 				$(".mid-msg").html("You identified " + answeredCorrect + "out of " + correctBird.length + "birds correctly!").show();
 				$(".btm-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show();
-			} else if (answeredCorrect < 4) {
+			} else if (answeredCorrect <= 4) {
 				$(".top-msg").html("The Audubon Society offers many great books about identifying birds, just saying!").show();
 				$(".mid-msg").html("You identified " + answeredCorrect + "out of " + correctBird.length + "birds correctly!").show();
 				$(".btm-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show();
