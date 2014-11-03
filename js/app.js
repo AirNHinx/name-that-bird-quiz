@@ -19,8 +19,8 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		$(".correct-bird").hide();
 		$(".answer-correct").hide();
 		$(".answer-wrong").hide();
-		$(".top-msg").hide();
-		$(".mid-msg").html("<p>Name that bird!</p>").show();
+		$(".mid-msg").hide();
+		$(".top-msg").html("<p>Name that bird!</p>").show();
 		$(".btm-msg").hide();
 		$(".start").removeClass("button-move-up");
 		//$(".bird").html("<img class='birdImg' + currentBird + "' src='img/bird/black-capped-chickadee.jpg'>");
@@ -52,7 +52,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		console.log(currentBird)
 		$(".correct-bird").addClass("correct-bird-confirm");
 		$(".wrong-bird").hide();
-		$(".mid-msg").hide();
+		$(".top-msg").hide();
 		$(".start").addClass("button-move-up");
 		$(".initiate").html("CONTINUE").show();
 
