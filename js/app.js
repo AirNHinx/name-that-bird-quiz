@@ -48,25 +48,23 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		console.log(t);
 		console.log(t.hasClass("correct-bird"));
 		console.log(currentBird)
+		$(".correct-bird").addClass("correct-bird-confirm");
+		$(".wrong-bird").hide();
+		$(".mid-msg").hide();
+		$(".initiate").html("CONTINUE").show();
 
 		if (t.hasClass("wrong-bird")) {
 			console.log("WRONG");
 			$(".answer-wrong").show();
 			$(".answer-correct").hide();
-			$(".wrong-bird").hide();
-			$(".correct-bird").addClass("correct-bird-confirm");
-			$(".initiate").html("CONTINUE").show();
+
 		} else if (t.hasClass("correct-bird")){
-			console.log("correct-bird");
-			$(".correct-bird").addClass("correct-bird-confirm");
+			console.log("CORRECT");
 			$(".answer-correct").show();
 			$(".answer-wrong").hide();
-			$(".wrong-bird").hide();
-			$(".mid-msg").hide();
-			$(".initiate").html("CONTINUE").show();
-
 			answeredCorrect += 1;
 		};
+
 		if (currentBird > 9) {
 			$(".answer-correct").html('You are correct!<p class="conclusion-confirm">That concludes this quiz.</p>');
 			$(".start").html('<button class = "calc-score" type = "button">SEE YOUR SCORE!</button>');
