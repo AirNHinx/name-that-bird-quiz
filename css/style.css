@@ -39,9 +39,7 @@ img#first-birds {
 }
 
 .text-container {
-	color: #DC143C;
 	font-family: "gisha","calibri",sans-serif;
-	font-size: 48px;
 	position: absolute;
 	height: 82%;
 	width: 43%;
@@ -51,10 +49,13 @@ img#first-birds {
 	background-color: #DCDCDC;
 	opacity: 0.8;
 	border-radius: 7%;
+	text-align: center;
 
 }
 
 .callout {
+	color: #DC143C;
+	font-size: 48px;
 	height: 50%;
 }
 
@@ -160,7 +161,6 @@ img#first-birds {
 	font-weight: normal;
 	font-style: italic;
 	list-style: none;
-	left: -50px;
 	font-size: 72px;
 	height: 41%;
 	vertical-align: middle;
