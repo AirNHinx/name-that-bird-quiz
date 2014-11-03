@@ -81,10 +81,12 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			$("button.calc-score").on("click", function() {
 			$(".main-img").html("<img class='main-bg' src='img/background/bird-sil.jpg'>");
 			$(".bird-img").hide();	
-			$(".correct-bird").hide();
+			$(".correct-bird-confirm").hide();
 			$(".answer-correct").hide();
 			$(".answer-wrong").hide();
-			$("button.calc-score").hide();	
+			$("button.calc-score").hide();
+			$(".mid-msg").addClass(".mid-msg-final");
+			$(".mid-msg").addClass(".btm-msg-final");	
 			console.log(answeredCorrect);
 			console.log((answeredCorrect/correctBird.length)*100);
 			if (answeredCorrect === 10) {
