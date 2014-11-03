@@ -64,20 +64,20 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		};
 		if (currentBird > 9) {
 			$(".proceed").removeClass("initiate");
-			$(this).html("SEE YOUR SCORE!").on("click", function() {
-				calcScoreAndReport();
-			});
-		}
+			calcScoreAndReport();
+		};
 
 	});
 	
 
 	function calcScoreAndReport() {
+		$(".proceed").html("SEE YOUR SCORE!").on("click", function() {
 		console.log(answeredCorrect);
 		console.log(Math(answeredCorrect/correctBird.length));
 
+		};
+	});
 
-	}
 
 });
 
