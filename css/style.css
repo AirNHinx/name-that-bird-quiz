@@ -190,10 +190,12 @@ button {
 
 .button-move-up {
 	top: 5%;
+	width: 30%;
+	left: 7%;
 }
 
 #bird3>ul>li.correct-bird-confirm {
-	height: 36%;
+	font-size: 104%;
 }
 
 #bird0>ul>li.correct-bird-confirm, #bird9>ul>li.correct-bird-confirm {
