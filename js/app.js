@@ -81,6 +81,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			$(".bird-img").hide();	
 			$(".correct-bird").hide();
 			$(".answer-correct").hide();
+			$(".answer-wrong").hide();
 			$("button.calc-score").hide();	
 			console.log(answeredCorrect);
 			console.log((answeredCorrect/correctBird.length)*100);
