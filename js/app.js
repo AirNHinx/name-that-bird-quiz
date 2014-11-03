@@ -23,25 +23,22 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		$(".bird-img").html("<img class = 'bird' " + ">");
 		$(".bird").attr("src", "img/bird/" + birdImg[currentBird]);
 		$("#bird-options").addClass("option-container");
+		$(".option").mouseenter(function() {
+		$(this).addClass("mouse-over");
+		})
+		.mouseleave(function(){
+		$(this).removeClass("mouse-over");
+		});
 		console.log("option" + correctBird[currentBird]);
 		$("#bird" + currentBird).show();
 		$("#bird" + currentBird + ">ul>li.option").addClass("wrong-bird");
-		//$(".option" + correctBird[currentBird]).addClass("correct-bird");
 		$("#bird" + currentBird + ">ul>li.option" + correctBird[currentBird]).removeClass("wrong-bird").addClass("correct-bird");
-		//$("#bird0>ul>.option2").addClass("correct-bird");
-		//$('#bird' + currentBird + '>ul>li.option' + correctBird[currentBird]).addClass('correct-bird')/*.removeClass('wrong-bird')*/;
 		$(".initiate").hide();
 		currentBird += 1;
-	
 	})
 
 	/*--highlight focused option--*/
-	$(".option").mouseenter(function() {
-		$(this).addClass("mouse-over");
-	})
-	.mouseleave(function(){
-		$(this).removeClass("mouse-over");
-	});
+	
 
 	/*---indicate selected answer---*/
 	$(".option-list>ul>li").on("click", function(event){
