@@ -84,7 +84,8 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 				$(".top-msg").html("You really know your birds!");
 				$("mid-msg").html("You identified" + answeredCorrect + "out of" + correctBird.length + "birds correctly!");
 				$("mid-msg").html("Your score is" + (answeredCorrect/correctBird.length)*100 + "%");
-			)
+			};
+			
 		})
 	}
 
