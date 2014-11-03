@@ -70,7 +70,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		};
 
 		if (currentBird > 9) {
-			$(".start").html('<button class = "calc-score" type = "button">That concludes this quiz.<p class = "conclusion-confirm">SEE YOUR SCORE!</p></button>');
+			$(".start").html('<button class = "calc-score" type = "button">That concludes this quiz.<p class = "conclusion-confirm">CLICK TO SEE YOUR SCORE!</p></button>');
 			calcScoreAndReport();
 		};
 
