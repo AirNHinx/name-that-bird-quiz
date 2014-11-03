@@ -58,12 +58,12 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			$(".answer-correct").show();
 			$(".answer-wrong").hide();
 			$(".wrong-bird").hide();
-			$(".initiate").html("CONTINUE").addClass("proceed").show();
+			$(".initiate").html("CONTINUE").show();
 
 			answeredCorrect += 1;
 		};
 		if (currentBird > 9) {
-			$("button.proceed").removeClass("initiate");
+			$(".start").html('<button class = "calc-score" type = "button">SEE YOUR SCORE</button>');
 			calcScoreAndReport();
 		};
 
@@ -71,7 +71,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 	
 
 	function calcScoreAndReport() {
-		$("button.proceed").html("SEE YOUR SCORE!").on("click", function() {
+		$("button.calc-score").on("click", function() {
 		console.log(answeredCorrect);
 		console.log(answeredCorrect/correctBird.length);
 
