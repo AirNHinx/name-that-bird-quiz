@@ -90,18 +90,11 @@ button {
 	top: 18%;
 }
 
-.mid-msg-final {
-	top: 46%;
-}
 
 .btm-msg {
 	top: 34%;
 }
 
-.btm-msg-final {
-	top: 68%;
-	font-size: 140%;
-}
 
 .initiate, .calc-score {
 	background-color: #DC143C;
@@ -216,4 +209,8 @@ button {
 
 #bird2>ul>li.correct-bird-confirm, #bird4>ul>li.correct-bird-confirm, #bird6>ul>li.correct-bird-confirm {
 	font-size: 140%;
+}
+
+.score-msg1, .score-msg2, .score-msg3 {
+	position: absolute;
 }

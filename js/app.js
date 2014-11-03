@@ -85,25 +85,20 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			$(".answer-correct").hide();
 			$(".answer-wrong").hide();
 			$("button.calc-score").hide();
-			$(".mid-msg").addClass(".mid-msg-final");
-			$(".mid-msg").addClass(".btm-msg-final");	
+			$(".callout").html("<li class='score-msg2'>You correctly identified " + answeredCorrect + " out of 10 birds!</li>");
+			$(".callout").html("<li class='score-msg3'>Your score is " + (answeredCorrect/correctBird.length)*100 + "%");
 			console.log(answeredCorrect);
 			console.log((answeredCorrect/correctBird.length)*100);
 			if (answeredCorrect === 10) {
-				$(".top-msg").html("PERFECT SCORE! You must be an avian expert!").show();
-				$(".mid-msg").html("You correctly identified " + answeredCorrect + " out of 10 birds!").show();
-				$(".btm-msg").html(" Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show();
+				$(".callout").html("<li class='score-msg1'>PERFECT SCORE! You must be an avian expert!</li>");
 			} else if (answeredCorrect >= 7) {
-				$(".top-msg").html("You know your birds, nice job!").show();
-				$(".mid-msg").html("You correctly identified " + answeredCorrect + " out of 10 birds!").show();
+				$(".callout").html("<li class='score-msg1'>You know your birds, nice job!</li>");
 				$(".btm-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show();
 			} else if (answeredCorrect >= 5) {
-				$(".top-msg").html("Not too bad!").show();
-				$(".mid-msg").html("You correctly identified " + answeredCorrect + " out of 10 birds.").show();
+				$(".callout").html("<li class='score-msg1'>Not too bad!</li>");
 				$(".btm-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show();
 			} else if (answeredCorrect <= 4) {
-				$(".top-msg").html("The Audubon Society offers many great books on identifying birds, just saying!").show();
-				$(".mid-msg").html("You correctly identified " + answeredCorrect + " out of 10 birds.").show();
+				$(".callout").html("<li class='score-msg1'>The Audubon Society offers many great books on identifying birds, just saying!</li>");
 				$(".btm-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show();
 			}	
 			
