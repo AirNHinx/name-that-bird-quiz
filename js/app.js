@@ -62,7 +62,8 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			answeredCorrect += 1;
 		};
 		if (currentBird > 9) {
-			$(".proceed").removeClass("initiate").html("SEE YOUR SCORE!").on("click", function() {
+			$(".proceed").removeClass("initiate");
+			$(this).html("SEE YOUR SCORE!").on("click", function() {
 				calcScoreAndReport();
 			});
 		}
@@ -72,7 +73,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 
 	function calcScoreAndReport() {
 		console.log(answeredCorrect);
-		console.log(answeredCorrect/correctBird.length);
+		console.log(Math(answeredCorrect/correctBird.length));
 
 
 	}
