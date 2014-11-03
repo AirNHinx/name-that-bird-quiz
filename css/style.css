@@ -70,7 +70,7 @@ button {
 }
 
 .top-msg, .mid-msg, .btm-msg, .start {
-	position: absolute;
+	margin-bottom: 10%;
 }
 
 .top-msg, .mid-msg, .btm-msg {
@@ -92,7 +92,7 @@ button {
 
 
 .btm-msg {
-	top: 34%;
+	top: 36%;
 }
 
 
@@ -108,6 +108,7 @@ button {
 	height: 82px;
 	line-height: 30px;
 	text-align: center;
+	color: #E0FFFF;
 }
 
 .bird-img {
@@ -214,5 +215,20 @@ button {
 }
 
 .score-msg1, .score-msg2, .score-msg3 {
-	position: absolute;
+	margin-bottom: 13%;
+}
+
+.score-msg1 {
+	margin-top: 10%;
+	color: black;
+}
+
+.score-msg2 {
+	width: 90%;
+	position: relative;
+	left: 3%;
+	background-color: #E0FFFF;
+	color: #191970;
+	border: 2px solid black;
+	border-radius: 15%;
 }
