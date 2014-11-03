@@ -55,7 +55,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			$(".answer-correct").hide();
 		} else if (t.hasClass("correct-bird")){
 			console.log("correct-bird");
-			$(".answer-correct").show();
+			$(".answer-correct").addClass("correct-bird-confirm").show();
 			$(".answer-wrong").hide();
 			$(".wrong-bird").hide();
 			$(".mid-msg").hide();

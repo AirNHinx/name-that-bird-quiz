@@ -142,7 +142,7 @@ img#first-birds {
 	font-weight: bolder;
 }
 
-.correct-bird {
+.correct-bird-confirm {
 	position: absolute;
 	bottom: 130px;
 	text-decoration: none;
