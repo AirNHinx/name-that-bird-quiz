@@ -105,6 +105,8 @@ button {
 
 .calc-score {
 	height: 82px;
+	line-height: 30px;
+	text-align: center;
 }
 
 .bird-img {
@@ -179,14 +181,16 @@ button {
 	vertical-align: middle;
 }
 
-.conclusion-confirm {
+.conclusion-confirm1 {
 	position: absolute;
+	top: 9%;
+	left: 6.3%;
+	line-height: 32px;
 	color:black;
-	left: 14%;
 }
 
 .button-move-up {
-	top:7%;
+	top: 5%;
 }
 
 #bird3>ul>li.correct-bird-confirm {
