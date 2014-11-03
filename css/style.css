@@ -59,8 +59,8 @@ img#first-birds {
 }
 
 .start {
-	top: 45%;
-	left: 16%;
+	top: 52%;
+	left: 15.5%;
 }
 
 .top-msg, .mid-msg, .btm-msg, .start {
@@ -109,25 +109,28 @@ img#first-birds {
 .option-container {
 	color: #DC143C;
 	font-family: "gisha","calibri",sans-serif;
-	font-size: 42px;
+	font-size: 40px;
 	position: absolute;
-	height: 35%;
-	width: 100%;
-	top: 52%;
+	height: 56%;
+	width: 45%;
+	top: 28%;
 
 }
 
 .option-list {
-	width: 36.7%;
+	width: 90%;
 	position: absolute;
 	left: 7%;
 	height: 100%;
 }
 
 .option{
-	padding-bottom: 20px;
-	list-style: initial;
-
+	color: #191970;
+	background-color: #E0FFFF;
+	width: 93%;
+	height: 44px;
+	text-align: center;
+	margin-bottom: 20%;
 }
 
 .answer-correct, .answer-wrong {
@@ -151,6 +154,8 @@ img#first-birds {
 	list-style: none;
 	left: -50px;
 	font-size: 72px;
+	height: 25%;
+	vertical-align: middle;
 }
 
 .conclusion-confirm {
