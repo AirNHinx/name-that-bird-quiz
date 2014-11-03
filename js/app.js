@@ -85,8 +85,8 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			$(".answer-correct").hide();
 			$(".answer-wrong").hide();
 			$("button.calc-score").hide();
-			$(".top-msg").html("class='score-msg1'>You correctly identified " + answeredCorrect + " out of 10 birds!").show().removeClass(".top-msg");
-			$(".mid-msg").html("class='score-msg2'>Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show().removeClass(".mid-msg");
+			$(".top-msg").html("You correctly identified " + answeredCorrect + " out of 10 birds!").addClass("score-msg1").removeClass(".top-msg").show();
+			$(".mid-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").addClass("score-msg2").removeClass(".mid-msg").show();
 			console.log(answeredCorrect);
 			console.log((answeredCorrect/correctBird.length)*100);
 			if (answeredCorrect === 10) {
