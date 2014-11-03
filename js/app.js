@@ -14,7 +14,7 @@ var correctBird = [2, 3, 0, 0, 2, 1, 1, 3, 2, 3];
 var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'violet-sabrewing-hummingbird.jpg', 'puffin.jpg', 'purple-finch.jpg', 'woodduck.jpg', 'stellers-jay.jpg', 'eagle-owl.jpg', 'greater-bird-paradise.jpg']
 
 	/*--- initiate first question---*/
-	$(".initiate").click(function() {
+	$("button.initiate").click(function() {
 		$(".main-img").html("<img class='main-bg' src='img/background/clouds.jpg'>");
 		$(".correct-bird").hide();
 		$(".answer-correct").hide();
@@ -63,7 +63,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			answeredCorrect += 1;
 		};
 		if (currentBird > 9) {
-			$(".proceed").removeClass("initiate");
+			$("button.proceed").removeClass("initiate");
 			calcScoreAndReport();
 		};
 
@@ -71,9 +71,9 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 	
 
 	function calcScoreAndReport() {
-		$(".proceed").html("SEE YOUR SCORE!").on("click", function() {
+		$("button.proceed").html("SEE YOUR SCORE!").on("click", function() {
 		console.log(answeredCorrect);
-		console.log(Math(answeredCorrect/correctBird.length));
+		console.log(answeredCorrect/correctBird.length);
 
 		})
 	}
