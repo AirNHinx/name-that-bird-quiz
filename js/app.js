@@ -53,7 +53,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		$(".correct-bird").addClass("correct-bird-confirm");
 		$(".wrong-bird").hide();
 		$(".mid-msg").hide();
-		$(".start").addClass("button-move-up").html('<button class = "calc-score" type = "button">That concludes this quiz. SEE YOUR SCORE!</button>');
+		$(".start").addClass("button-move-up");
 		$(".initiate").html("CONTINUE").show();
 
 		if (t.hasClass("wrong-bird")) {
@@ -69,6 +69,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		};
 
 		if (currentBird > 9) {
+			$(".start").html('<button class = "calc-score" type = "button">That concludes this quiz.<p class = "conclusion-confirm">SEE YOUR SCORE!</p></button>');
 			calcScoreAndReport();
 		};
 
