@@ -61,7 +61,8 @@ img#first-birds {
 
 .start {
 	top: 52%;
-	left: 15.5%;
+	left: 14%;
+	width: 16%;
 }
 
 .top-msg, .mid-msg, .btm-msg, .start {
@@ -174,4 +175,12 @@ img#first-birds {
 
 .button-move-up {
 	top:7%;
+}
+
+#bird0>ul>li.correct-bird-confirm {
+	height: 23%;
+}
+
+#bird1>ul>li.correct-bird-confirm, #bird2>ul>li.correct-bird-confirm {
+	height: 11%;
 }
