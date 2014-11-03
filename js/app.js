@@ -53,6 +53,9 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			console.log("WRONG");
 			$(".answer-wrong").show();
 			$(".answer-correct").hide();
+			$(".wrong-bird").hide();
+			$(".correct-bird").addClass("correct-bird-confirm");
+			$(".initiate").html("CONTINUE").show();
 		} else if (t.hasClass("correct-bird")){
 			console.log("correct-bird");
 			$(".correct-bird").addClass("correct-bird-confirm");
@@ -75,6 +78,8 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 
 	function calcScoreAndReport() {
 			$("button.calc-score").on("click", function() {
+			$(".main-img").html("<img class='main-bg' src='img/background/bird-sil.jpg'>");
+			$(".bird-img").hide();	
 			$(".correct-bird").hide();
 			$(".answer-correct").hide();
 			$("button.calc-score").hide();	
@@ -82,20 +87,20 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			console.log((answeredCorrect/correctBird.length)*100);
 			if (answeredCorrect === 10) {
 				$(".top-msg").html("PERFECT SCORE! You must be an avian expert!").show();
-				$(".mid-msg").html("You identified" + answeredCorrect + "out of" + correctBird.length + "birds correctly!").show();
-				$(".btm-msg").html("Your score is" + (answeredCorrect/correctBird.length)*100 + "%").show();
+				$(".mid-msg").html("You identified " + answeredCorrect + "out of " + correctBird.length + "birds correctly!").show();
+				$(".btm-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show();
 			} else if (answeredCorrect >= 7) {
 				$(".top-msg").html("You know your birds, nice job!").show();
-				$(".mid-msg").html("You identified" + answeredCorrect + "out of" + correctBird.length + "birds correctly!").show();
-				$(".btm-msg").html("Your score is" + (answeredCorrect/correctBird.length)*100 + "%").show();
+				$(".mid-msg").html("You identified " + answeredCorrect + "out of " + correctBird.length + "birds correctly!").show();
+				$(".btm-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show();
 			} else if (answeredCorrect >= 5) {
 				$(".top-msg").html("Not too bad!").show();
-				$(".mid-msg").html("You identified" + answeredCorrect + "out of" + correctBird.length + "birds correctly!").show();
-				$(".btm-msg").html("Your score is" + (answeredCorrect/correctBird.length)*100 + "%").show();
+				$(".mid-msg").html("You identified " + answeredCorrect + "out of " + correctBird.length + "birds correctly!").show();
+				$(".btm-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show();
 			} else if (answeredCorrect < 4) {
 				$(".top-msg").html("The Audubon Society offers many great books about identifying birds, just saying!").show();
-				$(".mid-msg").html("You identified" + answeredCorrect + "out of" + correctBird.length + "birds correctly!").show();
-				$(".btm-msg").html("Your score is" + (answeredCorrect/correctBird.length)*100 + "%").show();
+				$(".mid-msg").html("You identified " + answeredCorrect + "out of " + correctBird.length + "birds correctly!").show();
+				$(".btm-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show();
 			}	
 			
 		})
