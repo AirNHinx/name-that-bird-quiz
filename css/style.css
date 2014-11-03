@@ -46,7 +46,7 @@ img#first-birds {
 	height: 82%;
 	width: 43%;
 	/* text-align: center; */
-	left: 20px;
+	left: 0.7%;
 	top: 20px;
 	background-color: #DCDCDC;
 	opacity: 0.8;
@@ -94,7 +94,7 @@ img#first-birds {
 
 .bird-img {
 	position: absolute;
-	left: 45%;
+	right: 0.4%;
 	top: 120px;
 	width: 55%;
 
