@@ -85,21 +85,18 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			$(".answer-correct").hide();
 			$(".answer-wrong").hide();
 			$("button.calc-score").hide();
-			$(".callout").html("<li class='score-msg2'>You correctly identified " + answeredCorrect + " out of 10 birds!</li>");
-			$(".callout").html("<li class='score-msg3'>Your score is " + (answeredCorrect/correctBird.length)*100 + "%");
+			$(".top-msg").html("class='score-msg1'>You correctly identified " + answeredCorrect + " out of 10 birds!").show().removeClass(".top-msg");
+			$(".mid-msg").html("class='score-msg2'>Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show().removeClass(".mid-msg");
 			console.log(answeredCorrect);
 			console.log((answeredCorrect/correctBird.length)*100);
 			if (answeredCorrect === 10) {
-				$(".callout").html("<li class='score-msg1'>PERFECT SCORE! You must be an avian expert!</li>");
+				$(".btm-msg").html("class='score-msg3'>PERFECT SCORE! You must be an avian expert!").show().removeClass(".btm-msg");
 			} else if (answeredCorrect >= 7) {
-				$(".callout").html("<li class='score-msg1'>You know your birds, nice job!</li>");
-				$(".btm-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show();
+				$(".btm-msg").html("class='score-msg3'>You know your birds, nice job!").show().removeClass(".btm-msg");
 			} else if (answeredCorrect >= 5) {
-				$(".callout").html("<li class='score-msg1'>Not too bad!</li>");
-				$(".btm-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show();
+				$(".btm-msg").html("class='score-msg3'>Not too bad!").show().removeClass(".btm-msg");
 			} else if (answeredCorrect <= 4) {
-				$(".callout").html("<li class='score-msg1'>The Audubon Society offers many great books on identifying birds, just saying!</li>");
-				$(".btm-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").show();
+				$(".btm-msg").html("class='score-msg3'>Audubon Society offers many great books on birds, just saying!").show().removeClass(".btm-msg");
 			}	
 			
 		})

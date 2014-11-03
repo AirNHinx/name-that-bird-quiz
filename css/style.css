@@ -145,6 +145,7 @@ button {
 .option{
 	color: #191970;
 	background-color: #E0FFFF;
+	border: 2px solid black;
 	width: 93%;
 	height: 20%;
 	text-align: center;
@@ -167,7 +168,6 @@ button {
 }
 
 .mouse-over {
-	text-decoration: underline;
 	font-weight: bolder;
 }
 
@@ -179,6 +179,8 @@ button {
 	list-style: none;
 	font-size: 64px;
 	vertical-align: middle;
+	background-color: transparent;
+	border: none;
 }
 
 .conclusion-confirm1 {
