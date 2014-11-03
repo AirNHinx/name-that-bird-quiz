@@ -16,8 +16,6 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 	/*--- initiate first question---*/
 	$(".initiate").click(function() {
 		$(".main-img").html("<img class='main-bg' src='img/background/clouds.jpg'>");
-		$(".answer-correct").hide();
-		$(".option").hide();
 		$(".top-msg").hide();
 		$(".mid-msg").html("<p>Name that bird!</p>");
 		$(".btm-msg").hide();
