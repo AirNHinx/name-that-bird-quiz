@@ -85,18 +85,18 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			$(".answer-correct").hide();
 			$(".answer-wrong").hide();
 			$("button.calc-score").hide();
-			$(".top-msg").html("You correctly identified " + answeredCorrect + " out of 10 birds!").addClass("score-msg1").removeClass(".top-msg").show();
-			$(".mid-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").addClass("score-msg2").removeClass(".mid-msg").show();
+			$(".top-msg").html("You correctly identified " + answeredCorrect + " out of 10 birds!").addClass("score-msg1").removeClass("top-msg").show();
+			$(".mid-msg").html("Your score is " + (answeredCorrect/correctBird.length)*100 + "%").addClass("score-msg2").removeClass("mid-msg").show();
 			console.log(answeredCorrect);
 			console.log((answeredCorrect/correctBird.length)*100);
 			if (answeredCorrect === 10) {
-				$(".btm-msg").html("class='score-msg3'>PERFECT SCORE! You must be an avian expert!").show().removeClass(".btm-msg");
+				$(".btm-msg").html("PERFECT SCORE! You must be an avian expert!").addClass("score-msg3").removeClass("btm-msg").show();
 			} else if (answeredCorrect >= 7) {
-				$(".btm-msg").html("class='score-msg3'>You know your birds, nice job!").show().removeClass(".btm-msg");
+				$(".btm-msg").html("You know your birds, nice job!").addClass("score-msg3").removeClass("btm-msg").show();
 			} else if (answeredCorrect >= 5) {
-				$(".btm-msg").html("class='score-msg3'>Not too bad!").show().removeClass(".btm-msg");
+				$(".btm-msg").html("Not too bad!").addClass("score-msg3").removeClass("btm-msg").show();
 			} else if (answeredCorrect <= 4) {
-				$(".btm-msg").html("class='score-msg3'>Audubon Society offers many great books on birds, just saying!").show().removeClass(".btm-msg");
+				$(".btm-msg").html("Audubon Society offers many great books on birds, just saying!").addClass("score-msg3").removeClass("btm-msg").show();
 			}	
 			
 		})
