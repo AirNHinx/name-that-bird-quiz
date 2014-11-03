@@ -109,7 +109,7 @@ img#first-birds {
 .option-container {
 	color: #DC143C;
 	font-family: "gisha","calibri",sans-serif;
-	font-size: 48px;
+	font-size: 42px;
 	position: absolute;
 	height: 35%;
 	width: 100%;
@@ -118,7 +118,7 @@ img#first-birds {
 }
 
 .option-list {
-	width: 40%;
+	width: 36.7%;
 	position: absolute;
 	left: 7%;
 	height: 100%;
@@ -132,7 +132,7 @@ img#first-birds {
 
 .answer-correct, .answer-wrong {
 	position: absolute;
-	top: 28%;
+	top: 18%;
 	left: 5%;
 	font-size: 72px;
 }
@@ -144,8 +144,17 @@ img#first-birds {
 
 .correct-bird-confirm {
 	position: absolute;
-	bottom: 130px;
+	top: 30px;
 	text-decoration: none;
 	font-weight: normal;
 	font-style: italic;
+	list-style: none;
+	left: -50px;
+	font-size: 72px;
+}
+
+.conclusion-confirm {
+	font-size: 50%;
+	position: absolute;
+	color:black;
 }
