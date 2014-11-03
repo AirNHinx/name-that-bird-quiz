@@ -156,22 +156,15 @@ button {
 	width: 93%;
 	height: 20%;
 	text-align: center;
-	margin-bottom: 20%;
+	margin-bottom: 16%;
 	vertical-align: middle;
 }
 
 .answer-correct, .answer-wrong {
 	position: absolute;
-	top: 18%;
-	left: 5%;
-}
-
-.answer-correct {
-	font-size: 72px;
-}
-
-.answer-wrong {
-	font-size: 63px;
+	top: 33%;
+	left: 6%;
+	font-size: 70px;
 }
 
 .mouse-over {
