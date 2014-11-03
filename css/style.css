@@ -171,8 +171,7 @@ button {
 }
 
 .correct-bird-confirm {
-	position: absolute;
-	top: 30px;
+	margin-top: 15%;
 	text-decoration: none;
 	font-weight: normal;
 	font-style: italic;
