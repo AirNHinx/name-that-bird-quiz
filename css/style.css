@@ -82,7 +82,7 @@ button {
 }
 
 .top-msg>p {
-	font-size: 150%
+	font-size: 150%;
 	font-weight: bold;
 }
 
@@ -101,6 +101,10 @@ button {
 	height: 50px;
 	font-size: 20px;
 	border-radius: 16%;
+}
+
+.calc-score {
+	height: 82px;
 }
 
 .bird-img {
@@ -172,24 +176,31 @@ button {
 	font-style: italic;
 	list-style: none;
 	font-size: 64px;
-	height: 36%;
 	vertical-align: middle;
 }
 
 .conclusion-confirm {
-	font-size: 50%;
 	position: absolute;
 	color:black;
+	left: 14%;
 }
 
 .button-move-up {
 	top:7%;
 }
 
-#bird0>ul>li.correct-bird-confirm {
+#bird3>ul>li.correct-bird-confirm {
+	height: 36%;
+}
+
+#bird0>ul>li.correct-bird-confirm, #bird9>ul>li.correct-bird-confirm {
 	height: 23%;
 }
 
-#bird1>ul>li.correct-bird-confirm, #bird2>ul>li.correct-bird-confirm {
+#bird1>ul>li.correct-bird-confirm, #bird5>ul>li.correct-bird-confirm, #bird7>ul>li.correct-bird-confirm, #bird8>ul>li.correct-bird-confirm {
+	height: 13%;
+}
+
+#bird2>ul>li.correct-bird-confirm, #bird4>ul>li.correct-bird-confirm, #bird6>ul>li.correct-bird-confirm {
 	height: 11%;
 }
