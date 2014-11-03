@@ -61,8 +61,12 @@ img#first-birds {
 
 .start {
 	top: 52%;
-	left: 14%;
-	width: 16%;
+	left: 12%;
+	width: 20%;
+}
+
+button {
+	width: 100%;
 }
 
 .top-msg, .mid-msg, .btm-msg, .start {
@@ -70,19 +74,24 @@ img#first-birds {
 }
 
 .top-msg, .mid-msg, .btm-msg {
-	left: 5%;
+	left: 1%;
 }
 
 .top-msg {
-	top: 1%;
+	top: 3%;
+}
+
+.top-msg>p {
+	font-size: 150%
+	font-weight: bold;
 }
 
 .mid-msg {
-	top: 16%;
+	top: 18%;
 }
 
 .btm-msg {
-	top: 32%;
+	top: 34%;
 }
 
 
