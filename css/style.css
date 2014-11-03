@@ -60,9 +60,10 @@ img#first-birds {
 }
 
 .start {
-	top: 52%;
+	top: 45%;
 	left: 12%;
 	width: 20%;
+	position: absolute;
 }
 
 button {
@@ -102,13 +103,13 @@ button {
 	height: 50px;
 	font-size: 20px;
 	border-radius: 16%;
+	color: #E0FFFF;
 }
 
 .calc-score {
 	height: 82px;
 	line-height: 30px;
 	text-align: center;
-	color: #E0FFFF;
 }
 
 .bird-img {
