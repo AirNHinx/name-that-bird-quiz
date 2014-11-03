@@ -60,7 +60,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			console.log("WRONG");
 			$(".answer-wrong").show();
 			$(".answer-correct").hide();
-			$("#bird" + currentBird + ">ul>li.option" + correctBird[currentBird]).removeClass("correct-bird");
+			$(".correct-bird").removeClass("correct-bird");
 
 		} else if (t.hasClass("correct-bird")){
 			console.log("CORRECT");
