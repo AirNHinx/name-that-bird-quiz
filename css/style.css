@@ -163,3 +163,7 @@ img#first-birds {
 	position: absolute;
 	color:black;
 }
+
+.button-move-up {
+	top:7%;
+}

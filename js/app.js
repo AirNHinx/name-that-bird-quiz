@@ -22,6 +22,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		$(".top-msg").hide();
 		$(".mid-msg").html("<p>Name that bird!</p>").show();
 		$(".btm-msg").hide();
+		$(".initiate").removeClass("button-move-up");
 		//$(".bird").html("<img class='birdImg' + currentBird + "' src='img/bird/black-capped-chickadee.jpg'>");
 		$(".bird-img").html("<img class = 'bird' " + ">");
 		$(".bird").attr("src", "img/bird/" + birdImg[currentBird]);
@@ -52,7 +53,7 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 		$(".correct-bird").addClass("correct-bird-confirm");
 		$(".wrong-bird").hide();
 		$(".mid-msg").hide();
-		$(".initiate").html("CONTINUE").show();
+		$(".initiate").html("CONTINUE").addClass("button-move-up").show();
 
 		if (t.hasClass("wrong-bird")) {
 			console.log("WRONG");
