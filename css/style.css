@@ -62,10 +62,11 @@ img#first-birds {
 }
 
 .start {
-	top: 45%;
-	left: 12%;
-	width: 20%;
+	/* top: 45%; */
+	left: 24%;
+	width: 50%;
 	position: absolute;
+	text-align: center;
 }
 
 button {
@@ -87,6 +88,8 @@ button {
 .top-msg>p {
 	font-size: 150%;
 	font-weight: bold;
+	position: relative;
+	margin-top: 3%;
 }
 
 .mid-msg {
@@ -196,8 +199,8 @@ button {
 }
 
 .button-move-up {
-	top: 5%;
-	width: 30%;
+	top: 3%;
+	width: 86%;
 	left: 7%;
 }
 
