@@ -80,10 +80,10 @@ var birdImg = ['black-capped-chickadee.jpg', 'snowy-egret.jpg', 'raven.jpg', 'vi
 			$("button.calc-score").hide();	
 			console.log(answeredCorrect);
 			console.log((answeredCorrect/correctBird.length)*100);
-			if ((answeredCorrect/correctBird.length)*100 >= 80) {
-				$(".top-msg").html("You really know your birds!");
-				$("mid-msg").html("You identified" + answeredCorrect + "out of" + correctBird.length + "birds correctly!");
-				$("mid-msg").html("Your score is" + (answeredCorrect/correctBird.length)*100 + "%");
+			if (answeredCorrect > 7) {
+				$(".top-msg").html("You really know your birds!").show();
+				$(".mid-msg").html("You identified" + answeredCorrect + "out of" + correctBird.length + "birds correctly!").show();
+				$(".mid-msg").html("Your score is" + (answeredCorrect/correctBird.length)*100 + "%").show();
 			};
 			
 		})
